@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="short icon" href="—Pngtree—physical fitness sport gym logo_5172932.png" />
+</head>
+
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+<style>
+    table{
+        color: white;
+        width: 800px;
+        margin: auto;
+        text-align: center;
+        table-layout: fixed;
+    }
+    table,tr,td{
+        padding: 20px;
+        border: 1px solid #080808;
+        border-collapse: collapse;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(top, #3c3c3c 0%,#222222 100%);
+        background:-webkit-linear-gradient(top, #3c3c3c 0%,#222222 100%);
+    }
+    td:hover{
+        background: orange;
+    }
+</style>
+
+<body>
+
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="pexels-tima-miroshnichenko-5319755.mp4" type="video/mp4" />
+        </video>
+
+
+        <!-- ** Header Area Start ** -->
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ** Logo Start ** -->
+                            <a href="E:\New folder\HOME.html" class="logo">Hardcore<em> Fitness</em></a>
+                            <!-- ** Logo End ** -->
+                            <!-- ** Menu Start ** -->
+                            <ul class="nav">
+                                <li class="scroll-to-section"><a href="E:\New folder\HOME.html" class="active">Home</a></li>
+                                <li><a href="FEATURES.html">Features</a></li>
+                                <li><a href="WORKOUT.html">Workout</a></li>
+                                <li><a href="DIET PLAN.html">Diet plan</a></li>
+                                <li><a href="ADOUT US.html">Contact us</a></li>
+                                <li class="main-button"><a href="Loginform.html">Login</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ** Menu End ** -->
+                    </div>
+                </div>
+        </header>
+
+
+
+
+        <section class="section" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>Available <em> Features</em></h2>
+                            <img src="assets/images/line-dec.png" alt="waves">
+                            <img src="assets/images/medical-care (1).png" alt="waves">
+                            <img src="assets/images/line-dec.png" alt="waves">
+                            <p><strong>Stay Fit- An initiative to help enhance your lifestyle.</strong></p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <ul class="features-items">
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/umO-Z5GsOWk"
+                                        title="YouTube video player" frameborder="1"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>      
+                                <div class="right-content">
+                                    <h4>Home Workout</h4>
+                                    <p> Play the Video and do same as active in this Video then you can workout at home
+                                        easily.
+                                        Let's Play now and do together </p>
+
+                                </div>
+                            </li>
+
+
+
+
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ySwgYYgRZvE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+
+                                </div>
+                                <div class="right-content">
+                                    <h4>GYM Workout</h4>
+                                    <p>Play this video and do exercise same as that video.Let's Play now and do together
+                                    </p>
+
+                                </div>
+                            </li>
+
+
+
+                            <div class="col-lg-6">
+                                <ul class="features-items">
+                                    <li class="feature-item">
+                                        <div class="left-icon">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/g_tea8ZNk5A"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                                <div>
+                                                    <script>
+                                                        function displayprice(){
+                                                            var price=document.getElementById('seltype').value;
+                                                            document.getElementById('txtPrice').value=price;
+                                                        }
+                                                        function calculateprice(){
+                                                            var p=document.getElementById('txtPrice').value;
+                                                            var q=document.getElementById('txtQty').value;
+                                                            document.getElementById('txttotalPrice').value = (p * q);
+                                                        }
+                                                        function get(){
+                                                            if(txtQty>="1"){
+                                                                alert("Press OK to Continue"); 
+                                                            } 
+                                                            
+                                                            else if(txtQty<='0'){
+                                                                alert("Please Enter More Then 0");
+                                                            } 
+                                                        }
+                                                       
+                                                        
+                                                    </script>
+                                                    <table>
+                                                      <br>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                Select Type of Workout : 
+                                                                <select name="seltype" id="seltype" onchange="displayprice()">
+                                                                    <option value="">--SELECT-- </option>
+                                                                    <option value="6.67">Home Workout</option>
+                                                                    <option value="8.33">GYM Workout</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                Enter Minutes : <input type="number" id="txtQty" min="1"  value="1" onclick="get()" >
+                                                            </td> 
+                                                            <td>
+                                                                Calories : <input type="text" id="txtPrice" disabled>
+                                                            </td>                                                  
+                                                        </tr>
+                                                     
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <input type="button"  value="Press Here to Total" onclick="calculateprice()"><br>
+                                                            </td>
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                Total Calories:<input type="text"  id="txttotalPrice" onfocus="calculateprice()" size="10">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div> 
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+</body>
+
+</html>
